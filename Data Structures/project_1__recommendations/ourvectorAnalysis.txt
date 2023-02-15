@@ -1,4 +1,4 @@
-Edward Plesa, Spring 2021, CS251
+Edward Plesa, Spring 2021
 
 Thank you for using the Recommendations app!
 *********************************************************
