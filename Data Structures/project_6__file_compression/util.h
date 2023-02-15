@@ -1,5 +1,5 @@
 //
-//  Author: Edward Plesa, Spring 2021, Proj6, CS 251
+//  Author: Edward Plesa, Spring 2021, Proj6
 //
 
 #pragma once
