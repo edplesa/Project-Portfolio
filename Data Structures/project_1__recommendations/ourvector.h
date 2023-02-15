@@ -8,7 +8,7 @@
 //
 // Prof. Joe Hummel
 // U. of Illinois, Chicago
-// CS 251: Spring 2020
+// Spring 2020
 // Project #01
 //
 
