@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "Root" styleClass="border" fx:controller="GUIController">
+    
+    <padding>
+        <Insets top="35" right="35" bottom="35" left="35"/>
+    </padding>
+    
+
+    <left>
+        <VBox>
+            <Button text="Play Song" onAction="#playSong" minHeight="50" minWidth="160" /> 
+            <Button text="Song List" onAction="#handleBackToSongs" minHeight="50" minWidth="160" />  
+            <HBox alignment="CENTER" spacing="20">          
+                <Button text="Connect Keyboard" minHeight="50" minWidth="160" onAction="#loadMidiKeyboard" />
+                <Label  fx:id="keyboardConnectionLabel" styleClass="labelKeyboardNotLoaded" text="Keyboard not loaded" />  
+            </HBox>        
+            <Button text="Switch User" onAction="#handleBackToLogin" minHeight="50" minWidth="160" />
+
+        </VBox> 
+   </left>
+
+   <center>
+        <Pane fx:id="animationGroup" />
+   </center>
+
+   <bottom>
+        <HBox fx:id="pianoScene" />
+   </bottom>
+
+
+</BorderPane>

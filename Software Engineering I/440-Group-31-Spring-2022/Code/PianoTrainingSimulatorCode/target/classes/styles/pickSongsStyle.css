@@ -1,0 +1,9 @@
+.border {
+    -fx-font-family: 'Verdana';
+	-fx-background-color: rgb(49, 49, 49);
+}
+
+.button{
+    -fx-pref-width: 300;
+    -fx-font-family: 'Verdana';
+}

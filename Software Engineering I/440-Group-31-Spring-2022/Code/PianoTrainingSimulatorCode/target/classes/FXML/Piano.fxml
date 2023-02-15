@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<GridPane fx:id="pianoGridPane" alignment="CENTER" gridLinesVisible="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="850.0" prefWidth="800.0" stylesheets="@../styles/piano.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <columnConstraints>
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="556.0" minHeight="10.0" percentHeight="70.0" prefHeight="546.0" vgrow="ALWAYS" />
+      <RowConstraints maxHeight="415.0" minHeight="10.0" percentHeight="30.0" prefHeight="297.0" vgrow="ALWAYS" />
+   </rowConstraints>
+   <children>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="C" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="C" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="CSharp" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="C#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="D" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="D" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="81.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="DSharp" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="D#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="152.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="E" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="E" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="294.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="F" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="F" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="223.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="6" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="FSharp" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="F#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="365.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="7" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="G" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="G" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="436.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="8" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="GSharp" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="G#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="507.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="9" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="A" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="A" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="578.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="10" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="ASharp" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="A#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="650.0" layoutY="235.0" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="11" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="B" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="B" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS" />
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" GridPane.columnIndex="1" />
+      <VBox alignment="CENTER" layoutX="76.0" layoutY="10.0" GridPane.columnIndex="2" />
+      <VBox alignment="CENTER" layoutX="142.0" layoutY="10.0" GridPane.columnIndex="3" />
+      <VBox alignment="CENTER" layoutX="208.0" layoutY="10.0" GridPane.columnIndex="4" />
+      <VBox alignment="CENTER" layoutX="274.0" layoutY="10.0" GridPane.columnIndex="5" />
+      <VBox alignment="CENTER" layoutX="341.0" layoutY="10.0" GridPane.columnIndex="6" />
+      <VBox alignment="CENTER" layoutX="408.0" layoutY="10.0" GridPane.columnIndex="7" />
+      <VBox alignment="CENTER" layoutX="475.0" layoutY="10.0" GridPane.columnIndex="8" />
+      <VBox alignment="CENTER" layoutX="542.0" layoutY="10.0" GridPane.columnIndex="9" />
+      <VBox alignment="CENTER" layoutX="609.0" layoutY="10.0" GridPane.columnIndex="10" />
+      <VBox alignment="CENTER" layoutX="676.0" layoutY="10.0" GridPane.columnIndex="11" />
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="12" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="C1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="C" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="13" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="CSharp1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="C#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="14" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="D1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="D" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="15" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="DSharp1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="D#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="16" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="E1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="E" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="17" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="F1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="F" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="18" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="FSharp1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="F#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="19" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="G1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="G" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="20" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="GSharp1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="G#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="21" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="A1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="A" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="22" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="ASharp1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="A#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="23" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="B1" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="B" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" GridPane.columnIndex="12" />
+      <VBox alignment="CENTER" GridPane.columnIndex="13" />
+      <VBox alignment="CENTER" GridPane.columnIndex="14" />
+      <VBox alignment="CENTER" GridPane.columnIndex="15" />
+      <VBox alignment="CENTER" GridPane.columnIndex="16" />
+      <VBox alignment="CENTER" GridPane.columnIndex="17" />
+      <VBox alignment="CENTER" GridPane.columnIndex="18" />
+      <VBox alignment="CENTER" GridPane.columnIndex="19" />
+      <VBox alignment="CENTER" GridPane.columnIndex="20" />
+      <VBox alignment="CENTER" GridPane.columnIndex="21" />
+      <VBox alignment="CENTER" GridPane.columnIndex="23" />
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="24" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="C11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="C" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="25" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="CSharp11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="C#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="26" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="D11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="D" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="27" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="DSharp11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="D#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="28" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="E11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="E" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="29" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="F11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="F" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="30" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="FSharp11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="F#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="31" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="G11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="G" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="32" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="GSharp11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="G#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="33" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="A11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="A" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="34" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="ASharp11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="black-key" text="A#" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="Infinity" maxWidth="Infinity" GridPane.columnIndex="35" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="B11" alignment="BOTTOM_CENTER" contentDisplay="CENTER" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="white-key" text="B" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" GridPane.columnIndex="24" />
+      <VBox alignment="CENTER" GridPane.columnIndex="25" />
+      <VBox alignment="CENTER" GridPane.columnIndex="26" />
+      <VBox alignment="CENTER" GridPane.columnIndex="27" />
+      <VBox alignment="CENTER" GridPane.columnIndex="28" />
+      <VBox alignment="CENTER" GridPane.columnIndex="29" />
+      <VBox alignment="CENTER" GridPane.columnIndex="30" />
+      <VBox alignment="CENTER" GridPane.columnIndex="31" />
+      <VBox alignment="CENTER" GridPane.columnIndex="32" />
+      <VBox alignment="CENTER" GridPane.columnIndex="33" />
+      <VBox alignment="CENTER" GridPane.columnIndex="34" />
+      <VBox alignment="CENTER" GridPane.columnIndex="35" />
+   </children>
+</GridPane>

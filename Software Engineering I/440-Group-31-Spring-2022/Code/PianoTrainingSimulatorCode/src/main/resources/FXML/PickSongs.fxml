@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "Root" styleClass="border" fx:controller="PickSongsController">
+    
+    <center><VBox fx:id = "holdSongs">
+        
+        <HBox alignment = "center">            
+  		    <Button fx:id = "loadSongsButton" text = "Load Songs" onAction = "#handleLoadSongsButton"/>
+        </HBox>
+
+	</VBox></center>
+
+
+</BorderPane>

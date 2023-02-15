@@ -1,0 +1,9 @@
+.label{
+    -fx-text-fill: white;
+    -fx-font-family: 'Verdana';
+}
+
+.border {
+	-fx-background-color: rgb(49, 49, 49);
+    -fx-font-family: 'Verdana';
+}
