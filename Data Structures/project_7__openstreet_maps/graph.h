@@ -5,7 +5,7 @@
 // limited to a graph with at most 100 vertices.
 //
 // University of Illinois at Chicago
-// CS 251: Spring 2021
+// Spring 2021
 // Project #7 - Openstreet Maps
 //
 
