@@ -1,0 +1,57 @@
+Edward Plesa, Spring 2021, CS251
+
+Thank you for using the Recommendations app!
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   31
+ # of elements inserted: 268
+ # of elements accessed: 572
+*********************************************************
+*********************************************************
+ourvector<5Users> stats:
+ # of vectors created:   1
+ # of elements inserted: 8
+ # of elements accessed: 400
+*********************************************************
+*********************************************************
+ourvector<5Items> stats:
+ # of vectors created:   4
+ # of elements inserted: 30
+ # of elements accessed: 241
+*********************************************************
+
+Commands Used: 
+load podcastsTiny.txt ratingsTiny.txt
+login Maria
+show
+basic
+advanced
+print users
+print items
+add user
+Ed
+add rating
+1
+5
+similarity(creative component command)
+#
+
+
+ourvector<5Users> stats:
+In the entirety of the project, only one User vector is created: line 478. There were 7 users originally in the data file plus the one I added with "add user" resulting in 8 inserted
+elements. The elements accessed came from checking and comparing the items list to all the users in the userList in 2 sorting functions, checking the vector for user logged in, as well as
+creating the vectors which contain the users most similiar to each other(the recommendations commands).
+
+
+ourvector<5Items> stats:
+Vectors of <Items> created on lines: 271, 272, 391, 477. The original ourvector containing all items is only line 477. Lines 271 and 272 create the basic recommendation vectors for sorting
+that data between users (one vector is all users and the other is the highest rated movies not yet watch). Similarly, line 391 created the vector of dot products between 2 users. Elements
+inserted come from these recommendation algorithms which seems like a good estimate of inserts (few users and items for Tiny file). The accessed # comes from sorting these recommendation
+vectors and cross checking data.
+
+ourvector<i> stats:
+Vectors of non Item or User type created on: 371, 439 and the majority in the loadData command. The load data command uses a Struct "Users" which has a member of a vector type so that
+the ratings of the movies may be stored in this. Every user has there own vector as well as the recommendations algorithms creating new vectors to sort the ratings/dotproducts. Elements
+inserted seems good as the amount of data inputted in these specific vectors is quite high. Elements accessed also seems fine as the sorting algorithms access a good majority of the elements
+as well as cross checking.
+

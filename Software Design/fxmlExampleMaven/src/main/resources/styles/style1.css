@@ -1,0 +1,12 @@
+.button{
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+	-fx-background-color: gray;
+}
+
+.border{
+	-fx-background-color: #0efeef;
+
+}
+
+

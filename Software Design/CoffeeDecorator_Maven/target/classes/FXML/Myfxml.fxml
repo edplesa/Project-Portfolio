@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" 
+              fx:id = "root" styleClass="border" fx:controller = "MyController">
+	<!-- TODO Add Nodes -->
+	
+	<left><VBox>
+		<HBox>
+			<Button fx:id = "addSugar" text = "Add Sugar" onAction = "#handleAddSugar"/>  			
+		</HBox>
+		
+		<HBox>
+			<Button fx:id = "addExtraShot" text = "Add Extra Shot" onAction = "#handleAddExtraShot"/>  			
+		</HBox>
+		
+		<HBox>
+			<Button fx:id = "addCream" text = "Add Cream" onAction = "#handleAddCream"/>  			
+		</HBox>
+		
+		<HBox>
+			<Button fx:id = "addSprinkles" text = "Add Sprinkles" onAction = "#handleAddSprinkles"/>  			
+		</HBox>
+		
+		<HBox>
+			<Button fx:id = "addPumpkinSpice" text = "Add Pumpkin Spice" onAction = "#handleAddPumpkinSpice"/>  			
+		</HBox>
+	</VBox></left>
+	
+	
+	<bottom>
+		<HBox>
+			<Button fx:id = "makeOrder" text = "Order Coffee" onAction = "#handleMakeOrder"/>
+			<Button fx:id = "resetOrder" text = "New Coffee" onAction = "#handleResetOrder"/>
+		</HBox>
+	</bottom>	
+	
+	
+	<right>		
+		<Label fx:id = "orderForm"/>			
+	</right>	
+    
+</BorderPane>
+

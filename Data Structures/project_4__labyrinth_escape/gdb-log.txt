@@ -1,0 +1,117 @@
+For RegularMaze:
+
+Reading symbols from ExploreTheRegularLabyrinth.exe...done.
+(gdb) b ExploreTheRegularLabyrithn.cpp:16
+No source file named ExploreTheRegularLabyrithn.cpp.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b ExploreTheRegularLabyrinth.cpp:16
+Breakpoint 1 at 0x1b20: file ExploreTheRegularLabyrinth.cpp, line 19.
+(gdb) r
+Starting program: /home/edward/cs_251_data_structures_spring_2021/project_4__labyrinth_escape/ExploreTheRegularLabyrinth.exe 
+
+Breakpoint 1, main () at ExploreTheRegularLabyrinth.cpp:19
+19      if (isPathToFreedom(start, kPathOutOfRegularMaze)) {
+(gdb) i locals
+m = {_vptr.Maze = 0x555555762c40 <vtable for Maze+16>, grid = {
+    _vptr.Grid = 0x555555762c60 <vtable for Grid<MazeCell*>+16>, Rows = 0x555555775f10, NumRows = 4}, 
+  numRows = 4, numCols = 4, kNumTwistyRooms = 12}
+start = 0x555555776130
+(gdb) p *start
+$1 = {whatsHere = "", north = 0x0, south = 0x0, east = 0x555555776180, west = 0x0}
+(gdb) p *(start->east)
+$2 = {whatsHere = "Spellbook", north = 0x0, south = 0x5555557762c0, east = 0x0, west = 0x555555776130}
+(gdb) p *(start->east->south)
+$3 = {whatsHere = "", north = 0x555555776180, south = 0x0, east = 0x0, west = 0x555555776270}
+(gdb) p *(start->east->south->west)
+$4 = {whatsHere = "", north = 0x0, south = 0x5555557763b0, east = 0x5555557762c0, west = 0x0}
+(gdb) p *(start->east->south->west->south)
+$5 = {whatsHere = "", north = 0x555555776270, south = 0x0, east = 0x555555776400, west = 0x0}
+(gdb) p *(start->east->south->west->south->east)
+$6 = {whatsHere = "", north = 0x0, south = 0x555555776540, east = 0x0, west = 0x5555557763b0}
+(gdb) p *(start->east->south->west->south->east->south)
+$7 = {whatsHere = "", north = 0x555555776400, south = 0x0, east = 0x555555776590, west = 0x5555557764f0}
+(gdb) p *(start->east->south->west->south->east->south->west)
+$8 = {whatsHere = "", north = 0x0, south = 0x0, east = 0x555555776540, west = 0x0}
+(gdb) p *(start->east->south->west->south->east->south->east)
+$9 = {whatsHere = "", north = 0x555555776450, south = 0x0, east = 0x5555557765e0, west = 0x555555776540}
+(gdb) p *(start->east->south->west->south->east->south->east->north)
+$10 = {whatsHere = "", north = 0x555555776310, south = 0x555555776590, east = 0x0, west = 0x0}
+(gdb) p *(start->east->south->west->south->east->south->east->north->north)
+$11 = {whatsHere = "", north = 0x0, south = 0x555555776450, east = 0x555555776360, west = 0x0}
+(gdb) p *(start->east->south->west->south->east->south->east->north->north->east)
+$12 = {whatsHere = "", north = 0x555555776220, south = 0x0, east = 0x0, west = 0x555555776310}
+(gdb) p *(start->east->south->west->south->east->south->east->north->north->east->north)
+$13 = {whatsHere = "Wand", north = 0x0, south = 0x555555776360, east = 0x0, west = 0x5555557761d0}
+(gdb) p *(start->east->south->west->south->east->south->east->north->north->east->north->west)
+$14 = {whatsHere = "Potion", north = 0x0, south = 0x0, east = 0x555555776220, west = 0x0}
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 3144] will be killed.
+
+Quit anyway? (y or n) y
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
+For TwistyMaze:
+
+Reading symbols from ExploreTheTwistyLabyrinth.exe...done.
+(gdb) b ExploreTheTwistyLabyrinth.cpp:18
+Breakpoint 1 at 0x1a9b: file ExploreTheTwistyLabyrinth.cpp, line 20.
+(gdb) p *(start)
+No symbol "start" in current context.
+(gdb) r
+Starting program: /home/edward/cs_251_data_structures_spring_2021/project_4__labyrinth_escape/ExploreTheTwistyLabyrinth.exe 
+
+Breakpoint 1, main () at ExploreTheTwistyLabyrinth.cpp:20
+20      if (isPathToFreedom(start, kPathOutOfTwistyMaze)) {
+(gdb) p *(start)
+$1 = {whatsHere = "", north = 0x0, south = 0x555555777980, east = 0x0, west = 0x0}
+(gdb) p *(start->south)
+$2 = {whatsHere = "", north = 0x0, south = 0x555555776fd0, east = 0x5555557776c0, west = 0x0}
+(gdb) p *(start->south->east)
+$3 = {whatsHere = "", north = 0x555555777980, south = 0x0, east = 0x555555777760, west = 0x555555777710}
+(gdb) p *(start->south->east->east)
+$4 = {whatsHere = "", north = 0x5555557778a0, south = 0x555555777600, east = 0x555555777800, 
+  west = 0x5555557776c0}
+(gdb) p *(start->south->east->east->north)
+$5 = {whatsHere = "", north = 0x0, south = 0x555555777800, east = 0x555555777710, west = 0x555555777760}
+(gdb) p *(start->south->east->east)
+$6 = {whatsHere = "", north = 0x5555557778a0, south = 0x555555777600, east = 0x555555777800, 
+  west = 0x5555557776c0}
+(gdb) p *(start->south->east->east->east)
+$7 = {whatsHere = "", north = 0x5555557778a0, south = 0x0, east = 0x555555777760, west = 0x555555777850}
+(gdb) p *(start->south->east->east->east->west)
+$8 = {whatsHere = "Wand", north = 0x555555777800, south = 0x0, east = 0x0, west = 0x0}
+(gdb) p *(start->south->east->east)
+$9 = {whatsHere = "", north = 0x5555557778a0, south = 0x555555777600, east = 0x555555777800, 
+  west = 0x5555557776c0}
+(gdb) p *(start->south->east->east->south)
+$10 = {whatsHere = "Spellbook", north = 0x555555777710, south = 0x5555557779d0, east = 0x555555777760, 
+  west = 0x555555777670}
+(gdb) p *(start->south->east->east->south->west)
+$11 = {whatsHere = "", north = 0x0, south = 0x555555777600, east = 0x5555557779d0, west = 0x0}
+(gdb) p *(start->south->east->east->south->west->east)
+$12 = {whatsHere = "", north = 0x555555777670, south = 0x555555777600, east = 0x0, west = 0x5555557777b0}
+(gdb) p *(start->south->east->east->south->west->east->south)
+$13 = {whatsHere = "Spellbook", north = 0x555555777710, south = 0x5555557779d0, east = 0x555555777760, 
+  west = 0x555555777670}
+(gdb) p *(start->south->east->east->south->west->east)
+$14 = {whatsHere = "", north = 0x555555777670, south = 0x555555777600, east = 0x0, west = 0x5555557777b0}
+(gdb) p *(start->south->east->east->south->west->east->west)
+$15 = {whatsHere = "Potion", north = 0x5555557779d0, south = 0x0, east = 0x0, west = 0x0}
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 5291] will be killed.
+
+Quit anyway? (y or n) 
+Please answer y or n.
+A debugging session is active.
+
+    Inferior 1 [process 5291] will be killed.
+
+Quit anyway? (y or n) y
+
+
