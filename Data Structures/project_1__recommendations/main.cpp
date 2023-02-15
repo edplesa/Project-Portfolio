@@ -1,6 +1,6 @@
 //
 //  Project 1 Starter Code - Recommendations
-//  Author: Edward Plesa, Spring 2021, CS251
+//  Author: Edward Plesa, Spring 2021
 //
 //  Creative Component: command to type "similarity": the use of the dotproduct in our Code
 //  matches the similarity of two users "tastes" ie: the greater the absolute value of the 
