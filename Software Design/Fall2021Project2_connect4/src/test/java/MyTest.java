@@ -80,7 +80,7 @@ class MyTest {
 				{0,0,0,0,0,0,0},
 				{0,0,0,1,0,0,0},
 				{0,0,1,0,0,0,0},
-				{1,0,0,0,0,0,0},
+				{0,1,0,0,0,0,0},
 				{1,0,0,0,0,0,0}
 		};
 		assertEquals(true, checkWinTest(1, arr), "Diagonal1 not working");
